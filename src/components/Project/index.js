@@ -27,7 +27,8 @@ export default function ProjectCard(props) {
     return (
         <div>
             <Card className={classes.root}>
-                <CardActionArea>
+                <CardActionArea
+                href={props.url}>
                     <CardMedia
                         className={classes.media}
                         image={props.snapshot}

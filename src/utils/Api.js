@@ -1,7 +1,12 @@
 const axios = require('axios')
 
-export default {
+const URL_PREFIX = 'http://localhost:3001';
+// const URL_PREFIX = 'https://leightonalbrecht.herokuapp.com';
+
+const API = {
     getProjects: function() {
-        return axios.get("/api/projects")
+        return axios.get(`${URL_PREFIX}/api/projects`)
     }
 }
+
+export default API
