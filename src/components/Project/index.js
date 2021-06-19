@@ -25,30 +25,32 @@ export default function ProjectCard(props) {
     const classes = useStyles();
 
     return (
-        <Card className={classes.root}>
-            <CardActionArea>
-                <CardMedia
-                    className={classes.media}
-                    image={props.snapshot}
-                    title={props.projectName}
-                />
-                <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        {props.projectName}
-                    </Typography>
-                    <Typography variant="body2" color="textSecondary" component="p">
-                        {props.projectDescription}
-                    </Typography>
-                </CardContent>
-            </CardActionArea>
-            <CardActions className={classes.buttons}>
-                <Link
-                    href={props.projectRepo}
-                    target="_blank"
-                    color="black">
-                    <GitHubIcon />
-                </Link>
-            </CardActions>
-        </Card>
+        <div>
+            <Card className={classes.root}>
+                <CardActionArea>
+                    <CardMedia
+                        className={classes.media}
+                        image={props.snapshot}
+                        title={props.projectName}
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            {props.projectName}
+                        </Typography>
+                        <Typography variant="body2" color="textSecondary" component="p">
+                            {props.projectDescription}
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+                <CardActions className={classes.buttons}>
+                    <Link
+                        href={props.projectRepo}
+                        target="_blank"
+                        color="black">
+                        <GitHubIcon />
+                    </Link>
+                </CardActions>
+            </Card>
+        </div>
     )
 }
