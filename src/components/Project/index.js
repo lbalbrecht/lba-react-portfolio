@@ -32,7 +32,7 @@ export default function ProjectCard(props) {
                 target="_blank">
                     <CardMedia
                         className={classes.media}
-                        image={props.snapshot}
+                        src={props.snapshot}
                         title={props.projectName}
                     />
                     <CardContent>
